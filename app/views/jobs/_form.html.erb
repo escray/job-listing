@@ -1,5 +1,8 @@
 <%= simple_form_for @job do |f| %>
 <%= f.input :title %>
 <%= f.input :description %>
+<%= f.input :wage_lower_bound, :label => "salary lower bound" %>
+<%= f.input :wage_upper_bound, :label => "salary upper bound" %>
+<%= f.input :contact_email %>
 <%= f.submit "Submit" %>
 <% end %>

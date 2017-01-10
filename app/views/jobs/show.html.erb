@@ -2,6 +2,11 @@
   <div class="group">
     <%= link_to("Edit", edit_job_path(@job), class: "btn btn-primary pull-right") %>
   </div>
-  <h2><%= @job.title %></h2>
-  <p><%=simple_format(@job.description) %></p>
+  <%= simple_form_for @job do |f| %>
+  <%= f.input :title, disabled: true %>
+  <%= f.input :description, disabled: true %>
+  <%= f.input :wage_lower_bound, disabled: true %>
+  <%= f.input :wage_upper_bound, disabled: true %>
+  <%= f.input :contact_email, disabled: true, as: :email %>
+  <% end %>
 </div>
