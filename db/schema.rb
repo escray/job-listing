@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110213412) do
+ActiveRecord::Schema.define(version: 20170110220547) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20170110213412) do
     t.integer  "wage_upper_bound", default: 10000
     t.integer  "wage_lower_bound", default: 0
     t.string   "contact_email",    default: "xdite@growth.school"
+    t.boolean  "is_hidden",        default: true
   end
 
   create_table "users", force: :cascade do |t|
