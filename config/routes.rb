@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   devise_for :admins
   devise_for :users
-  resources :jobs
+  resources :jobs do
+    member do
+      post :publish
+      post :hide
+    end
+  end
   namespace :admin do
     resources :jobs
   end
