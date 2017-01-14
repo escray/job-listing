@@ -1,0 +1,6 @@
+<h3>Upload your resume to <%=@job.title %></h3>
+<hr />
+<%= simple_form_for [@job, @resume] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Upload" %>
+<% end %>
