@@ -17,3 +17,45 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+.jumbotron {
+  background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+  // http://www.careertoolbelt.com/wp-content/uploads/2015/01/dream_job_chalkboard.jpg
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+  color: #666666;
+}
+
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: left;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+  color: #999999;
+  top: 12px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+.caption {
+  margin: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  margin-top: 60px;
+}
