@@ -1,14 +1,14 @@
 class Admin::JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destory]
   before_action :require_is_admin
-  layout "admin"
+  layout 'admin'
 
   def show
     @job = Job.find(params[:id])
   end
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.paginate(page: params[:page], per_page: 10)
   end
 
   def new
