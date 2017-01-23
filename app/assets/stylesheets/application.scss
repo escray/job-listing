@@ -82,11 +82,39 @@
   color: #666666;
 }
 
+.container-fluid .jumbotron {
+  padding-bottom: 110px;
+  margin: 0 -15px 20px;
+  border-radius: 0;
+}
+
 .title {
+  background-color: rgba(250, 250, 250, 0.3);
+  max-width: 600px;
   font-family: "Helvetica Neue", "Microsoft Yahei";
   text-align: left;
   margin-top: 200px;
-  margin-bottom: 80px;
+  margin-bottom: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.jumbotron h1, .jombotron .h1 {
+  text-aligh: left;
+  color: #222;
+  padding: 50px 20px 0;
+}
+
+.jumbotron p {
+  margin: 0;
+  font-size: 20px;
+  max-width: 600px;
+  background-color: rgba(250, 250, 250, 0.39);
+  padding: 20px;
+  text-align: left;
+  color: #222;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .slogan {
