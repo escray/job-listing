@@ -35,10 +35,14 @@ gem 'mini_magick'
 gem 'simple_form'
 gem 'will_paginate'
 
+gem 'pg'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to
   # stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'capistrano-passenger'
+  gem 'capistrano-rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
@@ -48,7 +52,6 @@ end
 # end
 
 group :development do
-
   # Access an IRB console on exception pages or
   # by using <%= console %> anywhere in the code.
   gem 'listen'
