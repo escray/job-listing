@@ -29,9 +29,11 @@ gem 'jbuilder'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
 gem 'carrierwave'
+gem 'carrierwave-qiniu'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'mini_magick'
+gem 'qiniu-rs'
 gem 'simple_form'
 gem 'will_paginate'
 
