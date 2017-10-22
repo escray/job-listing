@@ -34,6 +34,7 @@ gem 'devise'
 gem 'font-awesome-rails'
 gem 'mini_magick'
 gem 'qiniu-rs'
+gem 'sidekiq'
 gem 'simple_form'
 gem 'whenever', require: false
 gem 'will_paginate'

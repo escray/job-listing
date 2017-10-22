@@ -328,6 +328,7 @@ DEPENDENCIES
   rails
   rails-erd
   sass-rails
+  sidekiq
   simple_form
   spring
   spring-watcher-listen
