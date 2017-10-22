@@ -18,7 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-evn :PATH, ENV['PATH']
+env :PATH, ENV['PATH']
 set :output, 'log/cron.log'
 
 every 1.hour do
